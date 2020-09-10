@@ -58,6 +58,8 @@ namespace ColorParty
             box.BackgroundColor = Color.FromRgba((int)r.Value, (int)g.Value, (int)b.Value, (int)a.Value);
         }
 
+        // ГЛОБАЛЬНОЕ ИЗМЕНЕНИЕ
+
         private void CheckAndSetColor() 
         {
             if (rever)
