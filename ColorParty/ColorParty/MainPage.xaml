@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColorParty.MainPage">
+
+    <StackLayout>
+
+        <Frame
+            x:Name="box"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="black">
+
+            <Label
+                Text="Color is black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                ></Label>
+
+            </Frame>
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+        </Frame.GestureRecognizers>
+
+        <Button
+         x:Name="btn"
+         Text="LETS PARTY"
+         VerticalOptions="FillAndExpand"
+         Clicked="btn_Clicked"
+         ></Button>
+
+         <Label
+         x:Name="al"
+         Text="Alpha = 00"
+         HorizontalOptions="Center"
+         ></Label>
+
+        <Slider
+            x:Name="a"
+            Value="0"
+            HorizontalOptions="FillAndExpand"
+            Maximum="255"
+            ValueChanged="ValueChanged"
+            BackgroundColor="White"
+            ThumbColor="Black"
+            ></Slider>
+
+        <Label
+            x:Name="rl"
+            Text="Red = 00"
+            HorizontalOptions="Center"
+            ></Label>
+
+            <Slider
+            x:Name="r"
+            Value="0"
+            HorizontalOptions="FillAndExpand"
+            Maximum="255"
+            ValueChanged="ValueChanged"
+            BackgroundColor="Red"
+            ThumbColor="Black"
+            ></Slider>
+
+        <Label
+            x:Name="gl"
+            Text="Green = 00"
+            HorizontalOptions="Center"
+            ></Label>
+
+        <Slider
+            x:Name="g"
+            Value="0"
+            HorizontalOptions="FillAndExpand"
+            Maximum="255"
+            ValueChanged="ValueChanged"
+            BackgroundColor="Green"
+            ThumbColor="Black"
+            ></Slider>
+
+        <Label
+            x:Name="bl"
+            Text="Blue = 00"
+            HorizontalOptions="Center"
+            ></Label>
+
+        <Slider
+            x:Name="b"
+            Value="0"
+            HorizontalOptions="FillAndExpand"
+            Maximum="255"
+            ValueChanged="ValueChanged"
+            BackgroundColor="Blue"
+            ThumbColor="Black"
+            ></Slider>
+
+    </StackLayout>
+
+</ContentPage>
